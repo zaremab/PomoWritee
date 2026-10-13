@@ -31,4 +31,4 @@ app.post("/api/ai",async(req,res)=>{
   res.json(JSON.parse(content));
  }catch(err){console.error("AI request failed:",err.message);res.status(502).json({error:"AI request failed. Check server logs and provider configuration."});}
 });
-app.listen(port,()=>console.log(`PomoWrite backend listening on http://localhost:${port}`));
+export default app;
